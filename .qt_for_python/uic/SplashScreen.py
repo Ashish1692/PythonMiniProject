@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'c:\Users\DELL\Downloads\imap-Image-to-PDF-Converter-Application-For-Windows-master\SplashScreen.ui'
+# Form implementation generated from reading ui file 'c:\Users\DELL\Downloads\File Format Converter\SplashScreen.ui'
 #
 # Created by: PyQt6 UI code generator 6.2.2
 #
