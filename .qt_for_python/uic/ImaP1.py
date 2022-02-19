@@ -87,10 +87,6 @@ class Ui_MainWindow(object):
         self.gridLayout.setHorizontalSpacing(7)
         self.gridLayout.setVerticalSpacing(0)
         self.gridLayout.setObjectName("gridLayout")
-        self.listWidget = QtWidgets.QListWidget(self.layoutWidget1)
-        self.listWidget.setStyleSheet("border: 2px solid rgb(0,20,32);")
-        self.listWidget.setObjectName("listWidget")
-        self.gridLayout.addWidget(self.listWidget, 1, 0, 1, 2)
         self.label_8 = QtWidgets.QLabel(self.layoutWidget1)
         self.label_8.setStyleSheet("")
         self.label_8.setObjectName("label_8")
@@ -117,7 +113,7 @@ class Ui_MainWindow(object):
 "};\n"
 "\n"
 "\n"
-"background-color: rgb(0,83,122);\n"
+"background-color: rgb(0, 35, 107);\n"
 "border: 1px solid rgb(5,5,5);\n"
 "border-radius: 6px;\n"
 "\n"
@@ -150,7 +146,7 @@ class Ui_MainWindow(object):
 "};\n"
 "\n"
 "\n"
-"background-color: rgb(0, 116, 56);\n"
+"background-color: rgb(0, 102, 0);\n"
 "border: 1px solid rgb(5,5,5);\n"
 "border-radius: 6px;\n"
 "\n"
@@ -163,6 +159,10 @@ class Ui_MainWindow(object):
         self.pushButton_add.setObjectName("pushButton_add")
         self.horizontalLayout.addWidget(self.pushButton_add)
         self.gridLayout.addLayout(self.horizontalLayout, 0, 1, 1, 1)
+        self.listWidget = QtWidgets.QListWidget(self.layoutWidget1)
+        self.listWidget.setStyleSheet("border: 2px solid rgb(0,20,32);")
+        self.listWidget.setObjectName("listWidget")
+        self.gridLayout.addWidget(self.listWidget, 1, 0, 1, 2)
         self.layoutWidget2 = QtWidgets.QWidget(self.tab)
         self.layoutWidget2.setGeometry(QtCore.QRect(430, 370, 260, 40))
         self.layoutWidget2.setObjectName("layoutWidget2")
@@ -189,7 +189,7 @@ class Ui_MainWindow(object):
 "};\n"
 "\n"
 "\n"
-"background-color: rgb(161, 18, 16);\n"
+"background-color: rgb(181, 0, 0);\n"
 "border-color: rgb(5,5,5);\n"
 "border-style: solid;\n"
 "border-width: 1px;\n"
@@ -220,7 +220,7 @@ class Ui_MainWindow(object):
 "};\n"
 "\n"
 "\n"
-"background-color: rgb(161, 18, 16);\n"
+"background-color: rgb(181, 0, 0);\n"
 "border-color: rgb(5,5,5);\n"
 "border-style: solid;\n"
 "border-width: 1px;\n"
@@ -402,15 +402,15 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Image To PDF Converter App"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "File Format Converter"))
         self.pushButton_up.setToolTip(_translate("MainWindow", "Up"))
         self.pushButton_down.setToolTip(_translate("MainWindow", "Down"))
-        self.listWidget.setToolTip(_translate("MainWindow", "Items"))
-        self.label_8.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:10pt;\">List of Items :</span></p></body></html>"))
+        self.label_8.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">List Of Files :</span></p></body></html>"))
         self.pushButton.setToolTip(_translate("MainWindow", "Add New Folder"))
         self.pushButton.setText(_translate("MainWindow", " Add Folder"))
         self.pushButton_add.setToolTip(_translate("MainWindow", "Add New File"))
         self.pushButton_add.setText(_translate("MainWindow", " Add File"))
+        self.listWidget.setToolTip(_translate("MainWindow", "Items"))
         self.pushButton_remove.setToolTip(_translate("MainWindow", "Remove Selected"))
         self.pushButton_remove.setText(_translate("MainWindow", " Remove"))
         self.pushButton_clear.setToolTip(_translate("MainWindow", "Clear All"))
@@ -421,7 +421,7 @@ class Ui_MainWindow(object):
         self.pushButton_make_pdf_4.setText(_translate("MainWindow", " Make PDF"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("MainWindow", "Home"))
         self.label.setText(_translate("MainWindow", "<html><head/><body><p><strong>Developers:</strong></p></body></html>"))
-        self.label_2.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:9pt;\">Rohan Godbole, Ashish Moghe, Chinmay Pawaskar, Soham Pathre</span></p></body></html>"))
+        self.label_2.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:9pt;\">Rohan Godbole, Ashish Moghe, Chinmay Puranik, Soham Pathre</span></p></body></html>"))
         self.label_7.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600;\">Icons Credit:</span></p></body></html>"))
         self.label_9.setText(_translate("MainWindow", "<html><head/><body><p><a href=\"https://icons8.com\"><span style=\" font-size:9pt; text-decoration: underline; color:#0055ff;\">Icons8.com</span></a></p></body></html>"))
         self.label_5.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600;\">Contact Info:</span></p></body></html>"))
@@ -432,7 +432,7 @@ class Ui_MainWindow(object):
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:7.8pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">License</span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">License</span></p>\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">Copyright (c) 2022</span></p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8.25pt;\"><br /></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:9pt;\">Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</span></p>\n"

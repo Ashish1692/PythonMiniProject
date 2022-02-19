@@ -14,15 +14,15 @@ class App(QMainWindow):
         uic.loadUi(appFolder + "ImaP1.ui", self)  # Load the UI(User Interface) file.
         
         """This is splashscreen"""
-        self.splash = QSplashScreen(QPixmap('screenshots\\about.jpg'))
-        self.splash.show()
-        QTimer.singleShot(500, self.splash.close)
+        # self.splash = QSplashScreen(QPixmap('screenshots\\about.jpg'))
+        # self.splash.show()
+        # QTimer.singleShot(500, self.splash.close)
 
         self.makeWindowCenter()
         self.run_system()  # main operating function of this GUI FIle
         # Status Bar Message
-        self.statusBar().showMessage("Convert your image files to PDF(Portable Document Format).")
-        self.setWindowTitle("Image To PDF Converter App For Desktop")
+        self.statusBar().showMessage("Convert your to files to PDF.")
+        self.setWindowTitle("File Format Converter")
 
     def makeWindowCenter(self):
         """For launching windows in center."""
