@@ -1,8 +1,5 @@
 from all_imports import *
 
-
-
-
 # Application root location ↓
 if system() == "Windows":
     appFolder = os.path.dirname(os.path.realpath(sys.argv[0])) + "\\"
