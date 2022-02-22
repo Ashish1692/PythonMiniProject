@@ -1,4 +1,4 @@
-from all_imports import *
+from Resources.all_imports import *
 
 # Application root location ↓
 if system() == "Windows":
@@ -11,7 +11,7 @@ class App(QMainWindow):
     def __init__(self):
         """Constructor."""
         super(App, self).__init__()
-        uic.loadUi(appFolder + "Main_Ui_File.ui", self)  # Load the UI(User Interface) file.
+        uic.loadUi(appFolder + "./UIFiles/Main_Ui_File.ui", self)  # Load the UI(User Interface) file.
 
         self.makeWindowCenter()
         self.run_system()  # main operating function of this GUI FIle
@@ -125,50 +125,46 @@ class App(QMainWindow):
 
 
 if __name__ == '__main__':
+
+    app = QApplication(sys.argv)
+
+    app.setStyle(QStyleFactory.create("Fusion"))
+
+    darkPalette = QtGui.QPalette()
+    darkColor = QColor(15, 17, 18)
+    disabledColor = QColor(127, 127, 127)
+    darkPalette.setColor(QPalette.Window, darkColor)
+    darkPalette.setColor(QPalette.WindowText, Qt.white)
+    darkPalette.setColor(QPalette.Base, QColor(0, 8, 5))
+    darkPalette.setColor(QPalette.AlternateBase, darkColor)
+    darkPalette.setColor(QPalette.ToolTipBase, Qt.white)
+    darkPalette.setColor(QPalette.ToolTipText, Qt.white)
+    darkPalette.setColor(QPalette.Text, Qt.white)
+    darkPalette.setColor(QPalette.Disabled, QPalette.Text, disabledColor)
+    darkPalette.setColor(QPalette.Button, darkColor)
+    darkPalette.setColor(QPalette.ButtonText, Qt.white)
+    darkPalette.setColor(QPalette.Disabled, QPalette.ButtonText, disabledColor)
+    darkPalette.setColor(QPalette.BrightText, Qt.red)
+    darkPalette.setColor(QPalette.Link, QColor(42, 130, 218))
+    darkPalette.setColor(QPalette.Highlight, QColor(42, 130, 218))
+    darkPalette.setColor(QPalette.HighlightedText, Qt.black)
+    darkPalette.setColor(QPalette.Disabled, QPalette.HighlightedText, disabledColor)
+
+    app.setPalette(darkPalette)
+    app.setStyleSheet("QToolTip { color: #ffffff; background-color: #2a82da; border: 1px solid white; }")
+
+    splash = splashscene()  # init the splashscreen ui
+    splash.show()          # show splashscreen ui
+    splash.progress()      # updating progressbar
+
+    run_main = App()  # Instantiate The App() class
+    run_main.show()
+
+    splash.finish(run_main)  # this will run main module when progress reaches to 100
+
     try:
-        app = QApplication(sys.argv)
-
-        app.setStyle(QStyleFactory.create("Fusion"))
-
-        darkPalette = QtGui.QPalette()
-        darkColor = QColor(15,17,18)
-        disabledColor = QColor(127, 127, 127)
-        darkPalette.setColor(QPalette.Window, darkColor)
-        darkPalette.setColor(QPalette.WindowText, Qt.white)
-        darkPalette.setColor(QPalette.Base, QColor(0,8,5))
-        darkPalette.setColor(QPalette.AlternateBase, darkColor)
-        darkPalette.setColor(QPalette.ToolTipBase, Qt.white)
-        darkPalette.setColor(QPalette.ToolTipText, Qt.white)
-        darkPalette.setColor(QPalette.Text, Qt.white)
-        darkPalette.setColor(QPalette.Disabled, QPalette.Text, disabledColor)
-        darkPalette.setColor(QPalette.Button, darkColor)
-        darkPalette.setColor(QPalette.ButtonText, Qt.white)
-        darkPalette.setColor(QPalette.Disabled, QPalette.ButtonText, disabledColor)
-        darkPalette.setColor(QPalette.BrightText, Qt.red)
-        darkPalette.setColor(QPalette.Link, QColor(42, 130, 218))
-        darkPalette.setColor(QPalette.Highlight, QColor(42, 130, 218))
-        darkPalette.setColor(QPalette.HighlightedText, Qt.black)
-        darkPalette.setColor(QPalette.Disabled, QPalette.HighlightedText, disabledColor)
-
-        app.setPalette(darkPalette)
-        app.setStyleSheet("QToolTip { color: #ffffff; background-color: #2a82da; border: 1px solid white; }")
-
-        splash = splashscene() # init the splashscreen ui 
-        splash.show()          # show splashscreen ui
-        splash.progress()      # updating progressbar
-
-        run_main = App()  # Instantiate The App() class
-        run_main.show()
-
-        splash.finish(run_main) # this will run main module when progress reaches to 100
-
-        try:
-            sys.exit(app.exec_())
-        except Exception as t:
-            raise t
-        finally:
-            print("Application Ran Successfully...")
-            
-    except Exception as e:
-        print(f"Error:{e}")
-    
+        sys.exit(app.exec_())
+    except Exception as t:
+        raise t
+    finally:
+        print("Application Runs Successfully...✅")

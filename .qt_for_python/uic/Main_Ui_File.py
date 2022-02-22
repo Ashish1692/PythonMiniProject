@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'c:\Users\DELL\Downloads\File Format Converter\Main_Ui_File.ui'
+# Form implementation generated from reading ui file 'c:\Users\DELL\Downloads\File Format Converter\Design\Main_Ui_File.ui'
 #
 # Created by: PyQt6 UI code generator 6.2.2
 #
@@ -16,7 +16,7 @@ class Ui_MainWindow(object):
         MainWindow.setMinimumSize(QtCore.QSize(978, 500))
         MainWindow.setMaximumSize(QtCore.QSize(978, 500))
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("c:\\Users\\DELL\\Downloads\\File Format Converter\\icons/main_icon.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon.addPixmap(QtGui.QPixmap("c:\\Users\\DELL\\Downloads\\File Format Converter\\Design\\icons/main_icon.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         MainWindow.setWindowIcon(icon)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
@@ -53,7 +53,7 @@ class Ui_MainWindow(object):
 "border-radius: 20px;")
         self.pushButton_up.setText("")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("c:\\Users\\DELL\\Downloads\\File Format Converter\\icons/collapse_arrow_50px.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon1.addPixmap(QtGui.QPixmap("c:\\Users\\DELL\\Downloads\\File Format Converter\\Design\\icons/collapse_arrow_50px.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pushButton_up.setIcon(icon1)
         self.pushButton_up.setIconSize(QtCore.QSize(30, 30))
         self.pushButton_up.setObjectName("pushButton_up")
@@ -74,7 +74,7 @@ class Ui_MainWindow(object):
 "border-radius: 20px;")
         self.pushButton_down.setText("")
         icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("c:\\Users\\DELL\\Downloads\\File Format Converter\\icons/expand_arrow_50px.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon2.addPixmap(QtGui.QPixmap("c:\\Users\\DELL\\Downloads\\File Format Converter\\Design\\icons/expand_arrow_50px.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pushButton_down.setIcon(icon2)
         self.pushButton_down.setIconSize(QtCore.QSize(30, 30))
         self.pushButton_down.setObjectName("pushButton_down")
@@ -121,7 +121,7 @@ class Ui_MainWindow(object):
 "\n"
 "")
         icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap("c:\\Users\\DELL\\Downloads\\File Format Converter\\icons/Add Folder_50px.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon3.addPixmap(QtGui.QPixmap("c:\\Users\\DELL\\Downloads\\File Format Converter\\Design\\icons/Add Folder_50px.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pushButton.setIcon(icon3)
         self.pushButton.setObjectName("pushButton")
         self.horizontalLayout.addWidget(self.pushButton)
@@ -154,7 +154,7 @@ class Ui_MainWindow(object):
 "\n"
 "")
         icon4 = QtGui.QIcon()
-        icon4.addPixmap(QtGui.QPixmap("c:\\Users\\DELL\\Downloads\\File Format Converter\\icons/plus_50px.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon4.addPixmap(QtGui.QPixmap("c:\\Users\\DELL\\Downloads\\File Format Converter\\Design\\icons/plus_50px.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pushButton_add.setIcon(icon4)
         self.pushButton_add.setObjectName("pushButton_add")
         self.horizontalLayout.addWidget(self.pushButton_add)
@@ -197,7 +197,7 @@ class Ui_MainWindow(object):
 "\n"
 "")
         icon5 = QtGui.QIcon()
-        icon5.addPixmap(QtGui.QPixmap("c:\\Users\\DELL\\Downloads\\File Format Converter\\icons/minus_50px.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon5.addPixmap(QtGui.QPixmap("c:\\Users\\DELL\\Downloads\\File Format Converter\\Design\\icons/minus_50px.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pushButton_remove.setIcon(icon5)
         self.pushButton_remove.setObjectName("pushButton_remove")
         self.horizontalLayout_7.addWidget(self.pushButton_remove)
@@ -228,7 +228,7 @@ class Ui_MainWindow(object):
 "\n"
 "")
         icon6 = QtGui.QIcon()
-        icon6.addPixmap(QtGui.QPixmap("c:\\Users\\DELL\\Downloads\\File Format Converter\\icons/clear_symbol_50px.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon6.addPixmap(QtGui.QPixmap("c:\\Users\\DELL\\Downloads\\File Format Converter\\Design\\icons/clear_symbol_50px.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pushButton_clear.setIcon(icon6)
         self.pushButton_clear.setObjectName("pushButton_clear")
         self.horizontalLayout_7.addWidget(self.pushButton_clear)
@@ -261,7 +261,7 @@ class Ui_MainWindow(object):
 "\n"
 "")
         icon7 = QtGui.QIcon()
-        icon7.addPixmap(QtGui.QPixmap("c:\\Users\\DELL\\Downloads\\File Format Converter\\icons/export_pdf_50px.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon7.addPixmap(QtGui.QPixmap("c:\\Users\\DELL\\Downloads\\File Format Converter\\Design\\icons/export_pdf_50px.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pushButton_make_pdf.setIcon(icon7)
         self.pushButton_make_pdf.setObjectName("pushButton_make_pdf")
         self.verticalLayout_2.addWidget(self.pushButton_make_pdf)
@@ -335,7 +335,7 @@ class Ui_MainWindow(object):
         self.pushButton_make_pdf_4.setObjectName("pushButton_make_pdf_4")
         self.verticalLayout_2.addWidget(self.pushButton_make_pdf_4)
         icon8 = QtGui.QIcon()
-        icon8.addPixmap(QtGui.QPixmap("c:\\Users\\DELL\\Downloads\\File Format Converter\\icons/top_menu_50px.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon8.addPixmap(QtGui.QPixmap("c:\\Users\\DELL\\Downloads\\File Format Converter\\Design\\icons/top_menu_50px.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.tabWidget.addTab(self.tab, icon8, "")
         self.tab_2 = QtWidgets.QWidget()
         self.tab_2.setObjectName("tab_2")
@@ -388,7 +388,7 @@ class Ui_MainWindow(object):
         self.textBrowser.setObjectName("textBrowser")
         self.gridLayout_2.addWidget(self.textBrowser, 4, 0, 1, 1)
         icon9 = QtGui.QIcon()
-        icon9.addPixmap(QtGui.QPixmap("c:\\Users\\DELL\\Downloads\\File Format Converter\\icons/info_50px.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon9.addPixmap(QtGui.QPixmap("c:\\Users\\DELL\\Downloads\\File Format Converter\\Design\\icons/info_50px.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.tabWidget.addTab(self.tab_2, icon9, "")
         self.horizontalLayout_6.addWidget(self.tabWidget)
         MainWindow.setCentralWidget(self.centralwidget)
