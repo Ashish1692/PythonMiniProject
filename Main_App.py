@@ -42,7 +42,7 @@ class App(QMainWindow):
         dir_path = QFileDialog.getExistingDirectory(self, 'Open File')
 
         if dir_path != "":
-            dir_files = main.make_pdf_all(dir_path)
+            dir_files = Logic_App.make_pdf_all(dir_path)
             for i in dir_files:
                 next_row = self.listWidget.count()
                 self.listWidget.insertItem(next_row, i)
@@ -114,7 +114,7 @@ class App(QMainWindow):
                     pdf_name += ".pdf"
                     if pdf_location == "":
                         return
-                    main.make_pdf_only_selected(items_list, pdf_name, pdf_location)
+                    Logic_App.make_pdf_only_selected(items_list, pdf_name, pdf_location)
                     last_reply = QMessageBox.information(self, "Done!", "Hurrah! Your PDF is ready! "
                                                                         "Go to your selected location to find "
                                                                         "the PDF.", QMessageBox.Ok)
@@ -153,6 +153,7 @@ if __name__ == '__main__':
     app.setPalette(darkPalette)
     app.setStyleSheet("QToolTip { color: #ffffff; background-color: #2a82da; border: 1px solid white; }")
 
+    print("running....")
     splash = splashscene()  # init the splashscreen ui
     splash.show()          # show splashscreen ui
     splash.progress()      # updating progressbar
@@ -163,7 +164,7 @@ if __name__ == '__main__':
     splash.finish(run_main)  # this will run main module when progress reaches to 100
 
     try:
-        sys.exit(app.exec_())
+        app.exec_()
     except Exception as t:
         raise t
     finally:
