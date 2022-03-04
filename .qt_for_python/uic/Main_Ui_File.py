@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'c:\Users\DELL\Downloads\File Format Converter\Design\Main_Ui_File.ui'
+# Form implementation generated from reading ui file 'c:\Users\DELL\Downloads\File Format Converter\UIFiles\Main_Ui_File.ui'
 #
 # Created by: PyQt6 UI code generator 6.2.2
 #
@@ -16,7 +16,7 @@ class Ui_MainWindow(object):
         MainWindow.setMinimumSize(QtCore.QSize(978, 500))
         MainWindow.setMaximumSize(QtCore.QSize(978, 500))
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("c:\\Users\\DELL\\Downloads\\File Format Converter\\Design\\icons/main_icon.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon.addPixmap(QtGui.QPixmap("c:\\Users\\DELL\\Downloads\\File Format Converter\\UIFiles\\icons/main_icon.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         MainWindow.setWindowIcon(icon)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
@@ -24,10 +24,15 @@ class Ui_MainWindow(object):
         self.horizontalLayout_6.setObjectName("horizontalLayout_6")
         self.tabWidget = QtWidgets.QTabWidget(self.centralwidget)
         self.tabWidget.setMaximumSize(QtCore.QSize(963, 461))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.tabWidget.setFont(font)
         self.tabWidget.setCursor(QtGui.QCursor(QtCore.Qt.CursorShape.ArrowCursor))
         self.tabWidget.setToolTip("")
         self.tabWidget.setToolTipDuration(291)
+        self.tabWidget.setAutoFillBackground(True)
         self.tabWidget.setTabShape(QtWidgets.QTabWidget.TabShape.Rounded)
+        self.tabWidget.setIconSize(QtCore.QSize(20, 22))
         self.tabWidget.setObjectName("tabWidget")
         self.tab = QtWidgets.QWidget()
         self.tab.setObjectName("tab")
@@ -53,7 +58,7 @@ class Ui_MainWindow(object):
 "border-radius: 20px;")
         self.pushButton_up.setText("")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("c:\\Users\\DELL\\Downloads\\File Format Converter\\Design\\icons/collapse_arrow_50px.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon1.addPixmap(QtGui.QPixmap("c:\\Users\\DELL\\Downloads\\File Format Converter\\UIFiles\\icons/collapse_arrow_50px.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pushButton_up.setIcon(icon1)
         self.pushButton_up.setIconSize(QtCore.QSize(30, 30))
         self.pushButton_up.setObjectName("pushButton_up")
@@ -74,7 +79,7 @@ class Ui_MainWindow(object):
 "border-radius: 20px;")
         self.pushButton_down.setText("")
         icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("c:\\Users\\DELL\\Downloads\\File Format Converter\\Design\\icons/expand_arrow_50px.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon2.addPixmap(QtGui.QPixmap("c:\\Users\\DELL\\Downloads\\File Format Converter\\UIFiles\\icons/expand_arrow_50px.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pushButton_down.setIcon(icon2)
         self.pushButton_down.setIconSize(QtCore.QSize(30, 30))
         self.pushButton_down.setObjectName("pushButton_down")
@@ -121,7 +126,7 @@ class Ui_MainWindow(object):
 "\n"
 "")
         icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap("c:\\Users\\DELL\\Downloads\\File Format Converter\\Design\\icons/Add Folder_50px.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon3.addPixmap(QtGui.QPixmap("c:\\Users\\DELL\\Downloads\\File Format Converter\\UIFiles\\icons/Add Folder_50px.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pushButton.setIcon(icon3)
         self.pushButton.setObjectName("pushButton")
         self.horizontalLayout.addWidget(self.pushButton)
@@ -154,7 +159,7 @@ class Ui_MainWindow(object):
 "\n"
 "")
         icon4 = QtGui.QIcon()
-        icon4.addPixmap(QtGui.QPixmap("c:\\Users\\DELL\\Downloads\\File Format Converter\\Design\\icons/plus_50px.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon4.addPixmap(QtGui.QPixmap("c:\\Users\\DELL\\Downloads\\File Format Converter\\UIFiles\\icons/plus_50px.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pushButton_add.setIcon(icon4)
         self.pushButton_add.setObjectName("pushButton_add")
         self.horizontalLayout.addWidget(self.pushButton_add)
@@ -197,7 +202,7 @@ class Ui_MainWindow(object):
 "\n"
 "")
         icon5 = QtGui.QIcon()
-        icon5.addPixmap(QtGui.QPixmap("c:\\Users\\DELL\\Downloads\\File Format Converter\\Design\\icons/minus_50px.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon5.addPixmap(QtGui.QPixmap("c:\\Users\\DELL\\Downloads\\File Format Converter\\UIFiles\\icons/minus_50px.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pushButton_remove.setIcon(icon5)
         self.pushButton_remove.setObjectName("pushButton_remove")
         self.horizontalLayout_7.addWidget(self.pushButton_remove)
@@ -228,7 +233,7 @@ class Ui_MainWindow(object):
 "\n"
 "")
         icon6 = QtGui.QIcon()
-        icon6.addPixmap(QtGui.QPixmap("c:\\Users\\DELL\\Downloads\\File Format Converter\\Design\\icons/clear_symbol_50px.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon6.addPixmap(QtGui.QPixmap("c:\\Users\\DELL\\Downloads\\File Format Converter\\UIFiles\\icons/clear_symbol_50px.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pushButton_clear.setIcon(icon6)
         self.pushButton_clear.setObjectName("pushButton_clear")
         self.horizontalLayout_7.addWidget(self.pushButton_clear)
@@ -261,7 +266,7 @@ class Ui_MainWindow(object):
 "\n"
 "")
         icon7 = QtGui.QIcon()
-        icon7.addPixmap(QtGui.QPixmap("c:\\Users\\DELL\\Downloads\\File Format Converter\\Design\\icons/export_pdf_50px.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon7.addPixmap(QtGui.QPixmap("c:\\Users\\DELL\\Downloads\\File Format Converter\\UIFiles\\icons/export_pdf_50px.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pushButton_make_pdf.setIcon(icon7)
         self.pushButton_make_pdf.setObjectName("pushButton_make_pdf")
         self.verticalLayout_2.addWidget(self.pushButton_make_pdf)
@@ -335,7 +340,7 @@ class Ui_MainWindow(object):
         self.pushButton_make_pdf_4.setObjectName("pushButton_make_pdf_4")
         self.verticalLayout_2.addWidget(self.pushButton_make_pdf_4)
         icon8 = QtGui.QIcon()
-        icon8.addPixmap(QtGui.QPixmap("c:\\Users\\DELL\\Downloads\\File Format Converter\\Design\\icons/top_menu_50px.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon8.addPixmap(QtGui.QPixmap("c:\\Users\\DELL\\Downloads\\File Format Converter\\UIFiles\\icons/top_menu_50px.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.tabWidget.addTab(self.tab, icon8, "")
         self.tab_2 = QtWidgets.QWidget()
         self.tab_2.setObjectName("tab_2")
@@ -388,7 +393,7 @@ class Ui_MainWindow(object):
         self.textBrowser.setObjectName("textBrowser")
         self.gridLayout_2.addWidget(self.textBrowser, 4, 0, 1, 1)
         icon9 = QtGui.QIcon()
-        icon9.addPixmap(QtGui.QPixmap("c:\\Users\\DELL\\Downloads\\File Format Converter\\Design\\icons/info_50px.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon9.addPixmap(QtGui.QPixmap("c:\\Users\\DELL\\Downloads\\File Format Converter\\UIFiles\\icons/info_50px.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.tabWidget.addTab(self.tab_2, icon9, "")
         self.horizontalLayout_6.addWidget(self.tabWidget)
         MainWindow.setCentralWidget(self.centralwidget)
@@ -420,6 +425,7 @@ class Ui_MainWindow(object):
         self.pushButton_make_pdf_3.setText(_translate("MainWindow", " Make PDF"))
         self.pushButton_make_pdf_4.setText(_translate("MainWindow", " Make PDF"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("MainWindow", "Home"))
+        self.tabWidget.setTabToolTip(self.tabWidget.indexOf(self.tab), _translate("MainWindow", "Home"))
         self.label.setText(_translate("MainWindow", "<html><head/><body><p><strong>Developers:</strong></p></body></html>"))
         self.label_2.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:9pt;\">Rohan Godbole, Ashish Moghe, Chinmay Puranik, Soham Pathre</span></p></body></html>"))
         self.label_7.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600;\">Icons Credit:</span></p></body></html>"))
@@ -431,9 +437,9 @@ class Ui_MainWindow(object):
         self.textBrowser.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:7.8pt; font-weight:400; font-style:normal;\">\n"
+"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">License</span></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">Copyright (c) 2022</span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Copyright (c) 2022</p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8.25pt;\"><br /></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:9pt;\">Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</span></p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;\"><br /></p>\n"
@@ -442,3 +448,4 @@ class Ui_MainWindow(object):
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;\"><br /></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:9pt;\">THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</span></p></body></html>"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("MainWindow", "About"))
+        self.tabWidget.setTabToolTip(self.tabWidget.indexOf(self.tab_2), _translate("MainWindow", "About"))
