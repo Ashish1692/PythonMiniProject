@@ -151,7 +151,7 @@ class Ui_MainWindow(object):
 "};\n"
 "\n"
 "\n"
-"background-color: rgb(0, 102, 0);\n"
+"background-color: rgb(58, 146, 0);\n"
 "border: 1px solid rgb(5,5,5);\n"
 "border-radius: 6px;\n"
 "\n"
@@ -258,7 +258,7 @@ class Ui_MainWindow(object):
 "\n"
 "\n"
 "\n"
-"background-color: rgb(129, 53, 129);\n"
+"background-color: rgb(255, 55, 75);\n"
 "border-color: rgb(1, 1, 1);\n"
 "border-style: solid;\n"
 "border-width: 1px;\n"
@@ -283,7 +283,7 @@ class Ui_MainWindow(object):
 "};\n"
 "\n"
 "\n"
-"background-color: rgb(52, 52, 111);\n"
+"background-color: rgb(51, 78, 255);\n"
 "border-color: rgb(1, 1, 1);\n"
 "border-style: solid;\n"
 "border-width: 1px;\n"
@@ -306,7 +306,7 @@ class Ui_MainWindow(object):
 "};\n"
 "\n"
 "\n"
-"background-color: rgb(173, 0, 86);\n"
+"background-color: rgb(35, 194, 7);\n"
 "border-color: rgb(1, 1, 1);\n"
 "border-style: solid;\n"
 "border-width: 1px;\n"
@@ -329,7 +329,7 @@ class Ui_MainWindow(object):
 "};\n"
 "\n"
 "\n"
-"background-color: rgb(48, 0, 144);\n"
+"background-color: rgb(193, 69, 255);\n"
 "border-color: rgb(1, 1, 1);\n"
 "border-style: solid;\n"
 "border-width: 1px;\n"
@@ -420,10 +420,10 @@ class Ui_MainWindow(object):
         self.pushButton_remove.setText(_translate("MainWindow", " Remove"))
         self.pushButton_clear.setToolTip(_translate("MainWindow", "Clear All"))
         self.pushButton_clear.setText(_translate("MainWindow", " Clear All"))
-        self.pushButton_make_pdf.setText(_translate("MainWindow", " Make PDF"))
-        self.pushButton_make_pdf_2.setText(_translate("MainWindow", " Make PDF"))
-        self.pushButton_make_pdf_3.setText(_translate("MainWindow", " Make PDF"))
-        self.pushButton_make_pdf_4.setText(_translate("MainWindow", " Make PDF"))
+        self.pushButton_make_pdf.setText(_translate("MainWindow", "IMG TO PDF"))
+        self.pushButton_make_pdf_2.setText(_translate("MainWindow", "DOC TO PDF"))
+        self.pushButton_make_pdf_3.setText(_translate("MainWindow", " Make PDF3"))
+        self.pushButton_make_pdf_4.setText(_translate("MainWindow", " Make PDF4"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("MainWindow", "Home"))
         self.tabWidget.setTabToolTip(self.tabWidget.indexOf(self.tab), _translate("MainWindow", "Home"))
         self.label.setText(_translate("MainWindow", "<html><head/><body><p><strong>Developers:</strong></p></body></html>"))

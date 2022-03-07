@@ -34,6 +34,7 @@ class App(QMainWindow):
         self.pushButton_up.clicked.connect(self.up_button_on_click)
         self.pushButton_down.clicked.connect(self.down_button_on_click)
         self.pushButton_make_pdf.clicked.connect(self.make_pdf_button_on_click)
+        self.pushButton_make_pdf_2.clicked.connect(self.make_doc_to_pdf_button_on_click)
         self.pushButton_clear.clicked.connect(self.clear_button_on_click)
 
     def add_folder_button_on_click(self):
@@ -63,7 +64,7 @@ class App(QMainWindow):
 
         else:
             get_reply = QMessageBox.question(self, "Remove An Image File", "Do you want to remove " + str(item.text())
-                                             + " from the list?", QMessageBox.Yes | QMessageBox.No)
+                                            + " from the list?", QMessageBox.Yes | QMessageBox.No)
             if get_reply == QMessageBox.Yes:
                 element = self.listWidget.takeItem(current_row)
                 del element
@@ -86,7 +87,7 @@ class App(QMainWindow):
 
     def clear_button_on_click(self):
         reply = QMessageBox.question(self, "Clear List Box", "Do you want to clear all the selections?",
-                                     QMessageBox.Yes | QMessageBox.No)
+                                    QMessageBox.Yes | QMessageBox.No)
         if reply == QMessageBox.Yes:
             self.listWidget.clear()
 
@@ -115,6 +116,39 @@ class App(QMainWindow):
                     if pdf_location == "":
                         return
                     Logic_App.make_pdf_only_selected(items_list, pdf_name, pdf_location)
+                    last_reply = QMessageBox.information(self, "Done!", "Hurrah! Your PDF is ready! "
+                                                                        "Go to your selected location to find "
+                                                                        "the PDF.", QMessageBox.Ok)
+                    if last_reply == QMessageBox.Ok:
+                        pass
+                else:
+                    return
+
+    def make_doc_to_pdf_button_on_click(self):
+        if self.listWidget.count() == 0:
+            reply = QMessageBox.information(
+                self, "Warning!", "List box is empty! Add files to list box first.", QMessageBox.Ok)
+
+        else:
+            items_list = []
+            for i in range(self.listWidget.count()):
+                items_list.append(str(self.listWidget.item(i).text()))
+
+            pdf_name, ok = QInputDialog.getText(self, "PDF Name", "Give A Name To Your PDF File", QLineEdit.Normal)
+            if pdf_name == "":
+                QMessageBox.information(self, "Alert", "Please Give Your PDF a name.", QMessageBox.Ok)
+                return
+            if ok and pdf_name is not None:
+                reply = QMessageBox.information(self, "PDF Location", "Let's Select A Destination "
+                                                "To Save Your PDF File!", QMessageBox.Ok)
+
+                if reply == QMessageBox.Ok:
+
+                    pdf_location = QFileDialog.getExistingDirectory(self, 'Open File')
+                    pdf_name += ".pdf"
+                    if pdf_location == "":
+                        return
+                    Logic_App.make_doc_to_pdf(str(items_list[0]), pdf_location, pdf_name)
                     last_reply = QMessageBox.information(self, "Done!", "Hurrah! Your PDF is ready! "
                                                                         "Go to your selected location to find "
                                                                         "the PDF.", QMessageBox.Ok)

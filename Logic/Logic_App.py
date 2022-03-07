@@ -1,4 +1,4 @@
-from PIL import Image # pillow library
+from PIL import Image  # pillow library
 import os
 import platform
 
@@ -22,6 +22,19 @@ def make_pdf_only_selected(selected_files, file_name, pdf_location):
             pass
     os.chdir(pdf_location)
     images_list[0].save(file_name, save_all=True, append_images=images_list[1:])
+
+def make_doc_to_pdf(selected_file, pdf_location, pdf_name):
+    import os
+    from docx2pdf import convert
+
+    dir_name = pdf_location
+    base_filename = str(pdf_name)
+    
+
+    output_file = os.path.join(dir_name, base_filename)
+
+    convert(selected_file, output_file)
+
 
 if __name__ == '__main__':
     print("This Is The Main Backend Module!")
