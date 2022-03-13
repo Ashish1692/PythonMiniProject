@@ -10,7 +10,7 @@ class splashscene(QSplashScreen):
         self.setWindowFlag(Qt.FramelessWindowHint)
 
     def progress(self):
-        for i in range(100):
+        for i in range(101):
             time.sleep(0.05)
             self.progressBar.setValue(i)
 
