@@ -101,25 +101,28 @@ class Ui_MainWindow(object):
         self.horizontalLayout.setSpacing(30)
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.pushButton = QtWidgets.QPushButton(self.layoutWidget1)
-        self.pushButton.setMinimumSize(QtCore.QSize(80, 37))
+        self.pushButton.setMinimumSize(QtCore.QSize(87, 37))
         self.pushButton.setMaximumSize(QtCore.QSize(122, 16777215))
         font = QtGui.QFont()
-        font.setPointSize(9)
+        font.setFamily("Arial")
+        font.setPointSize(10)
+        font.setBold(False)
+        font.setWeight(50)
         self.pushButton.setFont(font)
         self.pushButton.setCursor(QtGui.QCursor(QtCore.Qt.CursorShape.PointingHandCursor))
         self.pushButton.setStyleSheet("\n"
 "\n"
 "QPushButton::hover{\n"
 "    \n"
-"    background-color: rgb(40,40,40);\n"
-"    border: 1px solid rgb(3,3,3);\n"
+"    background-color: rgb(13, 68, 92);\n"
+"    border: 1px solid rgb(3,3,93);\n"
 "    border-radius: 6px;\n"
 "    \n"
 "};\n"
 "\n"
 "\n"
 "background-color: rgb(0, 35, 107);\n"
-"border: 1px solid rgb(5,5,5);\n"
+"border: 2px solid rgb(3,3,93);\n"
 "border-radius: 6px;\n"
 "\n"
 "\n"
@@ -134,8 +137,8 @@ class Ui_MainWindow(object):
         self.pushButton_add.setMinimumSize(QtCore.QSize(80, 37))
         self.pushButton_add.setMaximumSize(QtCore.QSize(122, 16777215))
         font = QtGui.QFont()
-        font.setFamily("MS Shell Dlg 2")
-        font.setPointSize(9)
+        font.setFamily("Arial")
+        font.setPointSize(10)
         font.setBold(False)
         font.setWeight(50)
         self.pushButton_add.setFont(font)
@@ -144,15 +147,15 @@ class Ui_MainWindow(object):
 "\n"
 "QPushButton::hover{\n"
 "    \n"
-"    background-color: rgb(40,40,40);\n"
-"    border: 1px solid rgb(3,3,3);\n"
+"    background-color: rgb(13, 68, 92);\n"
+"    border: 1px solid rgb(3,3,93);\n"
 "    border-radius: 6px;\n"
 "    \n"
 "};\n"
 "\n"
 "\n"
-"background-color: rgb(58, 146, 0);\n"
-"border: 1px solid rgb(5,5,5);\n"
+"background-color: rgb(0, 35, 107);\n"
+"border: 2px solid rgb(3,3,93);\n"
 "border-radius: 6px;\n"
 "\n"
 "\n"
@@ -179,13 +182,16 @@ class Ui_MainWindow(object):
         self.pushButton_remove.setMinimumSize(QtCore.QSize(103, 37))
         self.pushButton_remove.setMaximumSize(QtCore.QSize(122, 16777215))
         font = QtGui.QFont()
-        font.setPointSize(9)
+        font.setFamily("Arial")
+        font.setPointSize(10)
+        font.setBold(False)
+        font.setWeight(50)
         self.pushButton_remove.setFont(font)
         self.pushButton_remove.setCursor(QtGui.QCursor(QtCore.Qt.CursorShape.PointingHandCursor))
         self.pushButton_remove.setStyleSheet("\n"
 "QPushButton::hover{\n"
 "    \n"
-"    background-color: rgb(40,40,40);\n"
+"    background-color: rgb(210,0,0);\n"
 "    border-color: rgb(3,3,3);\n"
 "    border-style: solid;\n"
 "    border-width: 1px;\n"
@@ -210,13 +216,16 @@ class Ui_MainWindow(object):
         self.pushButton_clear.setMinimumSize(QtCore.QSize(103, 37))
         self.pushButton_clear.setMaximumSize(QtCore.QSize(122, 16777215))
         font = QtGui.QFont()
-        font.setPointSize(9)
+        font.setFamily("Arial")
+        font.setPointSize(10)
+        font.setBold(False)
+        font.setWeight(50)
         self.pushButton_clear.setFont(font)
         self.pushButton_clear.setCursor(QtGui.QCursor(QtCore.Qt.CursorShape.PointingHandCursor))
         self.pushButton_clear.setStyleSheet("\n"
 "QPushButton::hover{\n"
 "    \n"
-"    background-color: rgb(40,40,40);\n"
+"    background-color: rgb(200,0,0);\n"
 "    border-color: rgb(3,3,3);\n"
 "    border-style: solid;\n"
 "    border-width: 1px;\n"
@@ -248,22 +257,22 @@ class Ui_MainWindow(object):
         self.pushButton_make_pdf.setMinimumSize(QtCore.QSize(190, 43))
         self.pushButton_make_pdf.setMaximumSize(QtCore.QSize(200, 16777215))
         font = QtGui.QFont()
-        font.setPointSize(9)
+        font.setFamily("MS Sans Serif")
+        font.setPointSize(12)
         self.pushButton_make_pdf.setFont(font)
         self.pushButton_make_pdf.setStyleSheet("\n"
 "QPushButton::hover{\n"
 "    \n"
-"    background-color: rgb(90, 90, 90);\n"
+"    background-color: rgb(39, 55, 94);\n"
 "};\n"
 "\n"
 "\n"
 "\n"
-"background-color: rgb(255, 55, 75);\n"
+"background-color: rgb(19, 45, 84);\n"
 "border-color: rgb(1, 1, 1);\n"
 "border-style: solid;\n"
 "border-width: 1px;\n"
 "border-radius:5px;\n"
-"\n"
 "")
         icon7 = QtGui.QIcon()
         icon7.addPixmap(QtGui.QPixmap("c:\\Users\\DELL\\Downloads\\File Format Converter\\UIFiles\\icons/export_pdf_50px.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
@@ -274,21 +283,22 @@ class Ui_MainWindow(object):
         self.pushButton_make_pdf_2.setMinimumSize(QtCore.QSize(190, 43))
         self.pushButton_make_pdf_2.setMaximumSize(QtCore.QSize(200, 16777215))
         font = QtGui.QFont()
-        font.setPointSize(9)
+        font.setFamily("MS Sans Serif")
+        font.setPointSize(12)
         self.pushButton_make_pdf_2.setFont(font)
         self.pushButton_make_pdf_2.setStyleSheet("\n"
 "QPushButton::hover{\n"
 "    \n"
-"    background-color: rgb(90, 90, 90);\n"
+"    background-color: rgb(39, 55, 94);\n"
 "};\n"
 "\n"
 "\n"
-"background-color: rgb(51, 78, 255);\n"
+"\n"
+"background-color: rgb(19, 45, 84);\n"
 "border-color: rgb(1, 1, 1);\n"
 "border-style: solid;\n"
 "border-width: 1px;\n"
 "border-radius:5px;\n"
-"\n"
 "")
         self.pushButton_make_pdf_2.setIcon(icon7)
         self.pushButton_make_pdf_2.setObjectName("pushButton_make_pdf_2")
@@ -297,21 +307,22 @@ class Ui_MainWindow(object):
         self.pushButton_make_pdf_3.setMinimumSize(QtCore.QSize(190, 43))
         self.pushButton_make_pdf_3.setMaximumSize(QtCore.QSize(200, 16777215))
         font = QtGui.QFont()
-        font.setPointSize(9)
+        font.setFamily("MS Sans Serif")
+        font.setPointSize(12)
         self.pushButton_make_pdf_3.setFont(font)
         self.pushButton_make_pdf_3.setStyleSheet("\n"
 "QPushButton::hover{\n"
 "    \n"
-"    background-color: rgb(90, 90, 90);\n"
+"    background-color: rgb(39, 55, 94);\n"
 "};\n"
 "\n"
 "\n"
-"background-color: rgb(35, 194, 7);\n"
+"\n"
+"background-color: rgb(19, 45, 84);\n"
 "border-color: rgb(1, 1, 1);\n"
 "border-style: solid;\n"
 "border-width: 1px;\n"
 "border-radius:5px;\n"
-"\n"
 "")
         self.pushButton_make_pdf_3.setIcon(icon7)
         self.pushButton_make_pdf_3.setObjectName("pushButton_make_pdf_3")
@@ -320,21 +331,22 @@ class Ui_MainWindow(object):
         self.pushButton_make_pdf_4.setMinimumSize(QtCore.QSize(190, 43))
         self.pushButton_make_pdf_4.setMaximumSize(QtCore.QSize(200, 16777215))
         font = QtGui.QFont()
-        font.setPointSize(9)
+        font.setFamily("MS Sans Serif")
+        font.setPointSize(12)
         self.pushButton_make_pdf_4.setFont(font)
         self.pushButton_make_pdf_4.setStyleSheet("\n"
 "QPushButton::hover{\n"
 "    \n"
-"    background-color: rgb(90, 90, 90);\n"
+"    background-color: rgb(39, 55, 94);\n"
 "};\n"
 "\n"
 "\n"
-"background-color: rgb(193, 69, 255);\n"
+"\n"
+"background-color: rgb(19, 45, 84);\n"
 "border-color: rgb(1, 1, 1);\n"
 "border-style: solid;\n"
 "border-width: 1px;\n"
 "border-radius:5px;\n"
-"\n"
 "")
         self.pushButton_make_pdf_4.setIcon(icon7)
         self.pushButton_make_pdf_4.setObjectName("pushButton_make_pdf_4")

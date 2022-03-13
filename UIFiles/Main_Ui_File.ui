@@ -234,7 +234,7 @@ border-radius: 20px;</string>
             <widget class="QPushButton" name="pushButton">
              <property name="minimumSize">
               <size>
-               <width>80</width>
+               <width>87</width>
                <height>37</height>
               </size>
              </property>
@@ -246,7 +246,10 @@ border-radius: 20px;</string>
              </property>
              <property name="font">
               <font>
-               <pointsize>9</pointsize>
+               <family>Arial</family>
+               <pointsize>10</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
               </font>
              </property>
              <property name="cursor">
@@ -260,15 +263,15 @@ border-radius: 20px;</string>
 
 QPushButton::hover{
 	
-	background-color: rgb(40,40,40);
-	border: 1px solid rgb(3,3,3);
+	background-color: rgb(13, 68, 92);
+	border: 1px solid rgb(3,3,93);
 	border-radius: 6px;
 	
 };
 
 
 background-color: rgb(0, 35, 107);
-border: 1px solid rgb(5,5,5);
+border: 2px solid rgb(3,3,93);
 border-radius: 6px;
 
 
@@ -300,8 +303,8 @@ border-radius: 6px;
              </property>
              <property name="font">
               <font>
-               <family>MS Shell Dlg 2</family>
-               <pointsize>9</pointsize>
+               <family>Arial</family>
+               <pointsize>10</pointsize>
                <weight>50</weight>
                <bold>false</bold>
               </font>
@@ -317,15 +320,15 @@ border-radius: 6px;
 
 QPushButton::hover{
 	
-	background-color: rgb(40,40,40);
-	border: 1px solid rgb(3,3,3);
+	background-color: rgb(13, 68, 92);
+	border: 1px solid rgb(3,3,93);
 	border-radius: 6px;
 	
 };
 
 
-background-color: rgb(58, 146, 0);
-border: 1px solid rgb(5,5,5);
+background-color: rgb(0, 35, 107);
+border: 2px solid rgb(3,3,93);
 border-radius: 6px;
 
 
@@ -390,7 +393,10 @@ border-radius: 6px;
            </property>
            <property name="font">
             <font>
-             <pointsize>9</pointsize>
+             <family>Arial</family>
+             <pointsize>10</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
             </font>
            </property>
            <property name="cursor">
@@ -403,7 +409,7 @@ border-radius: 6px;
             <string notr="true">
 QPushButton::hover{
 	
-	background-color: rgb(40,40,40);
+	background-color: rgb(210,0,0);
 	border-color: rgb(3,3,3);
 	border-style: solid;
 	border-width: 1px;
@@ -445,7 +451,10 @@ border-radius:4px;
            </property>
            <property name="font">
             <font>
-             <pointsize>9</pointsize>
+             <family>Arial</family>
+             <pointsize>10</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
             </font>
            </property>
            <property name="cursor">
@@ -458,7 +467,7 @@ border-radius:4px;
             <string notr="true">
 QPushButton::hover{
 	
-	background-color: rgb(40,40,40);
+	background-color: rgb(200,0,0);
 	border-color: rgb(3,3,3);
 	border-style: solid;
 	border-width: 1px;
@@ -515,24 +524,24 @@ border-radius:4px;
            </property>
            <property name="font">
             <font>
-             <pointsize>9</pointsize>
+             <family>MS Sans Serif</family>
+             <pointsize>12</pointsize>
             </font>
            </property>
            <property name="styleSheet">
             <string notr="true">
 QPushButton::hover{
 	
-	background-color: rgb(90, 90, 90);
+	background-color: rgb(39, 55, 94);
 };
 
 
 
-background-color: rgb(255, 55, 75);
+background-color: rgb(19, 45, 84);
 border-color: rgb(1, 1, 1);
 border-style: solid;
 border-width: 1px;
 border-radius:5px;
-
 </string>
            </property>
            <property name="text">
@@ -560,23 +569,24 @@ border-radius:5px;
            </property>
            <property name="font">
             <font>
-             <pointsize>9</pointsize>
+             <family>MS Sans Serif</family>
+             <pointsize>12</pointsize>
             </font>
            </property>
            <property name="styleSheet">
             <string notr="true">
 QPushButton::hover{
 	
-	background-color: rgb(90, 90, 90);
+	background-color: rgb(39, 55, 94);
 };
 
 
-background-color: rgb(51, 78, 255);
+
+background-color: rgb(19, 45, 84);
 border-color: rgb(1, 1, 1);
 border-style: solid;
 border-width: 1px;
 border-radius:5px;
-
 </string>
            </property>
            <property name="text">
@@ -604,23 +614,24 @@ border-radius:5px;
            </property>
            <property name="font">
             <font>
-             <pointsize>9</pointsize>
+             <family>MS Sans Serif</family>
+             <pointsize>12</pointsize>
             </font>
            </property>
            <property name="styleSheet">
             <string notr="true">
 QPushButton::hover{
 	
-	background-color: rgb(90, 90, 90);
+	background-color: rgb(39, 55, 94);
 };
 
 
-background-color: rgb(35, 194, 7);
+
+background-color: rgb(19, 45, 84);
 border-color: rgb(1, 1, 1);
 border-style: solid;
 border-width: 1px;
 border-radius:5px;
-
 </string>
            </property>
            <property name="text">
@@ -648,23 +659,24 @@ border-radius:5px;
            </property>
            <property name="font">
             <font>
-             <pointsize>9</pointsize>
+             <family>MS Sans Serif</family>
+             <pointsize>12</pointsize>
             </font>
            </property>
            <property name="styleSheet">
             <string notr="true">
 QPushButton::hover{
 	
-	background-color: rgb(90, 90, 90);
+	background-color: rgb(39, 55, 94);
 };
 
 
-background-color: rgb(193, 69, 255);
+
+background-color: rgb(19, 45, 84);
 border-color: rgb(1, 1, 1);
 border-style: solid;
 border-width: 1px;
 border-radius:5px;
-
 </string>
            </property>
            <property name="text">
