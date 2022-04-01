@@ -11,7 +11,7 @@ class splashscene(QSplashScreen):
 
     def progress(self):
         for i in range(101):
-            time.sleep(0.05)
+            time.sleep(0.03)
             self.progressBar.setValue(i)
 
     def makeWindowCenter(self):
