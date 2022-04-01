@@ -16,7 +16,7 @@ class App(QMainWindow):
         self.makeWindowCenter()
         self.run_system()  # main operating function of this GUI FIle
         # Status Bar Message
-        self.statusBar().showMessage("Convert your to files to PDF.")
+        self.statusBar().showMessage("Convert your to Files.")
         self.setWindowTitle("File Format Converter")
 
     def makeWindowCenter(self):
@@ -35,6 +35,7 @@ class App(QMainWindow):
         self.pushButton_down.clicked.connect(self.down_button_on_click)
         self.pushButton_make_pdf.clicked.connect(self.make_pdf_button_on_click)
         self.pushButton_make_pdf_2.clicked.connect(self.make_doc_to_pdf_button_on_click)
+        self.pushButton_make_pdf_3.clicked.connect(self.convert_pdf2doc)
         self.pushButton_clear.clicked.connect(self.clear_button_on_click)
 
     def add_folder_button_on_click(self):
@@ -158,6 +159,40 @@ class App(QMainWindow):
                     return
 
 
+    def convert_pdf2doc(self):
+        if self.listWidget.count() == 0:
+            reply = QMessageBox.information(
+                self, "Warning!", "List box is empty! Add files to list box first.", QMessageBox.Ok)
+
+        else:
+            items_list1 = []
+            for i in range(self.listWidget.count()):
+                items_list1.append(str(self.listWidget.item(i).text()))
+
+            doc_name, ok = QInputDialog.getText(self, "PDF Name", "Give A Name To Your PDF File", QLineEdit.Normal)
+            if doc_name == "":
+                QMessageBox.information(self, "Alert", "Please Give Your PDF a name.", QMessageBox.Ok)
+                return
+            if ok and doc_name is not None:
+                reply = QMessageBox.information(self, "PDF Location", "Let's Select A Destination "
+                                                "To Save Your PDF File!", QMessageBox.Ok)
+
+                if reply == QMessageBox.Ok:
+
+                    doc_location = QFileDialog.getExistingDirectory(self, 'Open File')
+                    doc_name += ".docx"
+                    if doc_location == "":
+                        return
+                    Logic_App.convert_pdf2doc(str(items_list1[0]), doc_location, doc_name)
+                    last_reply = QMessageBox.information(self, "Done!", "Hurrah! Your PDF is ready! "
+                                                                        "Go to your selected location to find "
+                                                                        "the PDF.", QMessageBox.Ok)
+                    if last_reply == QMessageBox.Ok:
+                        pass
+                else:
+                    return
+
+
 if __name__ == '__main__':
 
     app = QApplication(sys.argv)
@@ -165,11 +200,11 @@ if __name__ == '__main__':
     app.setStyle(QStyleFactory.create("Fusion"))
 
     darkPalette = QtGui.QPalette()
-    darkColor = QColor("#072335")
+    darkColor = QColor(0,27,25)
     disabledColor = QColor(127, 127, 127)
     darkPalette.setColor(QPalette.Window, darkColor)
     darkPalette.setColor(QPalette.WindowText, Qt.white)
-    darkPalette.setColor(QPalette.Base, QColor("#041622"))
+    darkPalette.setColor(QPalette.Base, QColor(0,12,8))
     darkPalette.setColor(QPalette.AlternateBase, darkColor)
     darkPalette.setColor(QPalette.ToolTipBase, Qt.white)
     darkPalette.setColor(QPalette.ToolTipText, Qt.white)
