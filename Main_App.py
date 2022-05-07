@@ -3,8 +3,8 @@ from Resources.all_imports import *
 # Application root location ↓
 if system() == "Windows":
     appFolder = os.path.dirname(os.path.realpath(sys.argv[0])) + "\\"
-elif system() == "Linux":
-    appFolder = os.path.dirname(os.path.realpath(sys.argv[0])) + "//"
+else:
+    print("none")
 
 
 class App(QMainWindow):
@@ -65,7 +65,7 @@ class App(QMainWindow):
 
         else:
             get_reply = QMessageBox.question(self, "Remove An Image File", "Do you want to remove " + str(item.text())
-                                            + " from the list?", QMessageBox.Yes | QMessageBox.No)
+                                             + " from the list?", QMessageBox.Yes | QMessageBox.No)
             if get_reply == QMessageBox.Yes:
                 element = self.listWidget.takeItem(current_row)
                 del element
@@ -88,7 +88,7 @@ class App(QMainWindow):
 
     def clear_button_on_click(self):
         reply = QMessageBox.question(self, "Clear List Box", "Do you want to clear all the selections?",
-                                    QMessageBox.Yes | QMessageBox.No)
+                                     QMessageBox.Yes | QMessageBox.No)
         if reply == QMessageBox.Yes:
             self.listWidget.clear()
 
@@ -158,7 +158,6 @@ class App(QMainWindow):
                 else:
                     return
 
-
     def convert_pdf2doc(self):
         if self.listWidget.count() == 0:
             reply = QMessageBox.information(
@@ -200,11 +199,11 @@ if __name__ == '__main__':
     app.setStyle(QStyleFactory.create("Fusion"))
 
     darkPalette = QtGui.QPalette()
-    darkColor = QColor(0,27,25)
+    darkColor = QColor(0, 27, 25)
     disabledColor = QColor(127, 127, 127)
     darkPalette.setColor(QPalette.Window, darkColor)
     darkPalette.setColor(QPalette.WindowText, Qt.white)
-    darkPalette.setColor(QPalette.Base, QColor(0,12,8))
+    darkPalette.setColor(QPalette.Base, QColor(0, 12, 8))
     darkPalette.setColor(QPalette.AlternateBase, darkColor)
     darkPalette.setColor(QPalette.ToolTipBase, Qt.white)
     darkPalette.setColor(QPalette.ToolTipText, Qt.white)
